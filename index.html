@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<script>
-function august() { var currentDate = new Date().getTime(); var targetDate = new
-Date("August 15, 2022").getTime(); var diff = currentDate - targetDate; var days
-= Math.floor(diff / (1000 * 60 * 60 * 24)); if (days % 2 === 0) {
-return("15th"); } else { return("14th"); } } document.write((august()))
-</script>
-</body>
+
+  <body style="background-color: rgb(24, 24, 27);">
+    <h1 style="color:white;">What day is it?</h1>
+    <p style="color:white;">If you are wondering what day it is,</p>
+    <script>
+      function august() {
+        var currentDate = new Date().getTime();
+        var targetDate = new
+        Date("August 15, 2022").getTime();
+        var diff = currentDate - targetDate;
+        var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        if (days % 2 === 0) {
+          return ('<strong>15th</strong>');
+        } else {
+          return ('<strong>14th</strong>');
+        }
+      }
+      document.write('<p style="color:white;">It is August ' + august().fontcolor("red") + '.</p>')
+    </script>
+  </body>
+
 </html>
