@@ -6,6 +6,41 @@
       background-image: url('https://cdn.discordapp.com/attachments/636320755033964548/1049400295827976192/image.png');
     }
 
+  :root {
+  --color: #FF0000; 
+}
+   
+  .fade-in-text {
+  font-family: Sans-serif;
+  font-size: 25px;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+span {
+  text-shadow: 0 0 5px var(--color);
+}
+  .button {
+  background-color: #808080;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+  .button:hover {
+  background-color: #6e6e6e;
+  transform: scale(1.05, 1.05);
+}
   </style>
 
 	<head>
@@ -14,6 +49,8 @@
 	</head>
 
   <body>
+    <div class="right" style="padding-left: 20px;">
+    <div class="fade-in-text">
     <h1 style="color:white;">What day is it?</h1>
     <p style="color:white;">If you are wondering what day it is,</p>
     <script>
@@ -22,6 +59,7 @@
       var diff = currentDate - targetDate;
       var days = Math.floor(diff / (1000 * 60 * 60 * 24));
       var color = "red"
+      var r = document.querySelector(':root');
 
       function august() {
         currentDate = new Date().getTime();
@@ -30,16 +68,22 @@
         days = Math.floor(diff / (1000 * 60 * 60 * 24));
         if (days % 2 === 0) {
           color = "red"
+          r.style.setProperty('--color', 'red');
           return ('<strong>15th</strong>');
         } else {
           color = "deepskyblue"
+          r.style.setProperty('--color', 'deepskyblue');
           return ('<strong>14th</strong>');
         }
       }
-      document.write('<p style="color:white;">It is August ' + august().fontcolor(color) + '.<br>It has been <strong>' + days + '</strong> days since August 15th, 2022.</p>')
-
+      document.write('<p style="color:white; text-shadow: 0 0 2px var(--color);">It is August ' + august().fontcolor(color) + '<br>It has been <strong>' + days + '</strong> days since August 15th, 2022</p>')
     </script>
-    <h1 style="color:white;">nuclear energy has no downsides</h1>
+    
+    <button class="button" onclick="window.location.href='https://workshop.codes/SY694';"><b>PJJDM</b></button>
+    </div>
+    </div>
   </body>
+
+
 
 </html>
