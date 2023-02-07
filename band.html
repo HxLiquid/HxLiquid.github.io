@@ -4,13 +4,24 @@
   <style>
     body {
       background-image: url('https://cdn.discordapp.com/attachments/636320755033964548/1049400295827976192/image.png');
-        height: 1000px;
+      height: 1000px;
+      overflow: hidden;
     }
 
   :root {
   --color: #FF0000; 
 }
    
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0; 
+  background: transparent;
+}
+
   .fade-in-text {
   font-family: Sans-serif;
   font-size: 25px;
@@ -25,7 +36,7 @@
 footer {
   text-align: center;
   padding: 1px;
-  background-color: #f1c20e;
+  background-color: #fa1eff;
   color: white;
   position: fixed;
   left: 0;
@@ -56,14 +67,56 @@ footer {
   border: none;
   cursor: pointer;
 }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Sans-serif;
+}
+
+.topnav a:hover {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.header {
+  background-color: #2A2A2A;
+  text-align: center;
+  color: white;
+  font-family: Sans-serif;
+  font-size: 25px;
+  padding: 1px;
+}
+
   </style>
 
 	<head>
- 	 <title>Band Named Doorhinge</title>
+    <title>The Website</title>
+    <meta content="The Website" property="og:title" />
+    <meta content="yeah" property="og:description" />
+    <meta content="https://hxliquid.github.io/" property="og:url" />
+    <meta content="#FFFFFF" data-react-helmet="true" name="theme-color" />
 	 <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/636320755033964548/1052987492204285982/pfpc.ico">
 	</head>
 
   <body>
+    <div class="header">
+      <h1>The Website</h1>
+    </div>
+      <div class="topnav">
+        <a href="index.html">August Day Tracker</a>
+        <a href="band.html">Band Named Doorhinge</a>
+        <a href="https://workshop.codes/SY694">PJJDM</a>
+      </div>
     <div class="fade-in-text">
     <div class="right" style="padding-left: 20px;">
     <h1 style="color:#fa1eff;"><u>Band Named Doorhinge</u></h1>
