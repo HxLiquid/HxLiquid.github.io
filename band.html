@@ -21,7 +21,7 @@
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-
+  
 footer {
   text-align: center;
   padding: 1px;
@@ -41,6 +41,7 @@ footer {
   padding: 0px 15px;
   z-index: 0;
   font-size: 15px;
+  animation: fadeIn 0.25s;
 }
 
 .dropdown:hover .dropdown-content {
@@ -66,7 +67,20 @@ footer {
     <div class="fade-in-text">
     <div class="right" style="padding-left: 20px;">
     <h1 style="color:#fa1eff;"><u>Band Named Doorhinge</u></h1>
-    <p style="color:#f1c20e;"><strike>not</strike> making music since thursday</p>
+    <script>
+      var currentDate = new Date().getTime();
+      var targetDate = new Date("January 19, 2023").getTime();
+      var diff = currentDate - targetDate;
+      var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+      function august() {
+        currentDate = new Date().getTime();
+        targetDate = new Date("January 19, 2023").getTime();
+        diff = currentDate - targetDate;
+        days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      }
+      document.write('<p style="color:#f1c20e;"><strike>not</strike> making music for ' + days + ' days</p>')
+    </script>
     <img src="https://media.discordapp.net/attachments/636320755033964548/1072157854867406900/image.png" alt="Logo" width="384" height="338">
     </div>
     <div class="dropdownffset" style="padding-left: 20px;">
