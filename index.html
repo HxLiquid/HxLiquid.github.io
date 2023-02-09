@@ -66,12 +66,12 @@ span {
 
   <body>
     <div class="header">
-      <h1>The Website</h1>
+      <h1>The Website: August Day Tracker</h1>
     </div>
     <div class="topnav">
       <a href="index.html">August Day Tracker</a>
       <a href="band.html">Band Named Doorhinge</a>
-      <a window.location.href="https://workshop.codes/SY694">PJJDM</a>
+      <a href="pjjdm.html">PJJDM</a>
     </div>
     <div class="right" style="padding-left: 20px;">
     <div class="fade-in-text">
@@ -82,6 +82,7 @@ span {
       var targetDate = new Date("August 15, 2022").getTime();
       var diff = currentDate - targetDate;
       var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      var years = days/365;
       var color = "red"
       var r = document.querySelector(':root');
 
@@ -90,6 +91,8 @@ span {
         targetDate = new Date("August 15, 2022").getTime();
         diff = currentDate - targetDate;
         days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        years = days/365;
+        years = years.toFixed(3);
         if (days % 2 === 0) {
           color = "red"
           r.style.setProperty('--color', 'red');
@@ -100,7 +103,7 @@ span {
           return ('<strong>14th</strong>');
         }
       }
-      document.write('<p style="color:white; text-shadow: 0 0 2px var(--color);">It is August ' + august().fontcolor(color) + '<br>It has been <strong>' + days + '</strong> days since August 15th, 2022</p>')
+      document.write('<p style="color:white; text-shadow: 0 0 2px var(--color);">It is August ' + august().fontcolor(color) + '<br>It has been <strong>' + days + '</strong> days since August 15th, 2022' + '<br>It has been <strong>' + years + '</strong> years since August 15th, 2022</p>')
     </script>
     </div>
 </div>  

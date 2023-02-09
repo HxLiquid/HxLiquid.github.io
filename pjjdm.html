@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+
+  <style>
+    body {
+      background-image: url('https://cdn.discordapp.com/attachments/636320755033964548/1073247148755386408/image.png');
+      height: 10000px;
+      overflow: hidden;
+    }
+
+  :root {
+  --color: #FF0000; 
+}
+   
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0; 
+  background: transparent;
+}
+
+  .fade-in-text {
+  font-family: Sans-serif;
+  font-size: 25px;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 17px;
+  text-decoration: none;
+  font-family: Sans-serif;
+  font-size: 18px;
+}
+
+.topnav a:hover {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.header {
+  background-color: #2e3337;
+  text-align: center;
+  color: white;
+  font-family: Sans-serif;
+  font-size: 28px;
+  padding: 1px;
+}
+
+#tableStyle {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    display: inline-block;
+  }
+  
+  #tableStyle td, #tableStyle th {
+    padding: 8px;
+    color: #90989c;
+    font-weight: bold;
+    font-family: Sans-serif;
+    font-size: 16px;
+    word-wrap: normal;
+  }
+
+  #tableStyle tr:nth-child(even){background-color: #393d41;}
+  #tableStyle tr:nth-child(odd){background-color: #2e3337;}
+  
+  #tableStyle tr:hover {background-color: #262626;}
+  
+  #tableStyle th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #272b2f;
+    color: white;
+  }
+
+  </style>
+
+	<head>
+    <title>The Website</title>
+    <meta content="The Website" property="og:title" />
+    <meta content="yeah" property="og:description" />
+    <meta content="https://hxliquid.github.io/" property="og:url" />
+    <meta content="#FFFFFF" data-react-helmet="true" name="theme-color" />
+	 <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/636320755033964548/1052987492204285982/pfpc.ico">
+	</head>
+
+  <body>
+    <div class="header">
+      <h1>The Website: PJJDM</h1>
+    </div>
+      <div class="topnav">
+        <a href="index.html">August Day Tracker</a>
+        <a href="band.html">Band Named Doorhinge</a>
+        <a href="pjjdm.html">PJJDM</a>
+      </div>
+    <div class="fade-in-text">
+    <div class="right" style="padding-left: 20px;">
+    <img src="https://cdn.workshop.codes/9j8sauhu3utjsy2rcjkjpsesw30q" alt="Logo" width="1000" height="562">
+    <hr style="width: 1000px; height: 5px; text-align: left; margin-left: 0; color: white; background-color :white;">
+    <p style = "color: white; background-color: #292e31; padding: 10px; display: inline-block;"><b>PJJ Deathmatch is a never-ending deathmatch with random abilities largely inspired by JoJo and other various media.<br>
+        Each player spawns with a random hero, fusion, enchant, and trait which will give them an edge in battle.<br>
+        Some fusions have passive abilities, while others require you to press buttons (most commonly interact) to use.<br>
+        Rarely, final blows can get you an additional ultimate fusion which will power you up even further.<br>
+        Excluding ultimate fusions, there are over  <span style="color: #3FBF74"><b>12,840</b></span> different combinations you can acquire!<br>
+        (Don't start the gamemode!)</b></p>
+    <h1 style="color:white; font-size: 25px">Additional Mechanics</h1>
+    <table id="tableStyle">
+    <tr>
+        <th>Name</th>
+        <th>Effect</th>
+    </tr>
+    <tr>
+        <td>One Shot Override</td>
+        <td>One shots go through <span style="color: #3FBF74">non-hero</span> damage reduction.</td>
+    </tr>
+    <tr>
+        <td>Heal on Kill</td>
+        <td>Final blows grant 100 health.</td>
+    </tr>
+    <tr>
+        <td>Passive Regen</td>
+        <td>Heal 3 health per second.</td>
+    </tr>
+    <tr>
+        <td>Keep Ultimate</td>
+        <td>Ultimate charge is kept after dying.</td>
+    </tr>
+    <tr>
+        <td>Points</td>
+        <td>Obtained through final blows and dealing damage. Lose some on death.</td>
+    </tr>
+    </table>
+    <h1 style="color:white; font-size: 25px">Type Key</h1>
+    <table id="tableStyle">
+        <tr>
+            <th>Name</th>
+            <th>Usage</th>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">Utility</span></td>
+            <td>Provides some sort of utility, such as immobilization, invisibility, movement, or healing.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#FF4C4C">Damage</span></td>
+            <td>Increases your damage output either directly or through an ability.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#00E4FF">Defense</span></td>
+            <td>Reduces the amount of damage taken or keeps you alive longer.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#B63FFF">Hybrid</span></td>
+            <td>Performs more than one role.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#FFEC00">Over Heaven</span></td>
+            <td>Obtained through random chance. Applied on top of your current abilities.</td>
+        </tr>
+        </table>
+        <h1 style="color:white; font-size: 25px">Passive Fusions</h1>
+        <table id="tableStyle">
+            <tr>
+                <th>Name</th>
+                <th>Ability</th>
+                <th>Cooldown</th>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Highway Star</span></td>
+                <td>Lifesteal 55% of damage on hit.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Spice Girl</span></td>
+                <td>Hits apply 5 + 20% of damage as knockback away from you.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Ratt</span></td>
+                <td>Final blows grant powerful regen equal to 50 + 20% of max health per second for 7 seconds.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Harvest</span></td>
+                <td>Receive 1.75x healing from all sources, and heal to full on final blow.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Hanged Man</span></td>
+                <td>Final blows teleport you to the furthest player from you with 4 seconds of invincibility and 2 seconds of invisibility.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Transcendent</span></td>
+                <td>You don't take knockback and deal 2x extra knockback.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Little Feet</span></td>
+                <td>You are 75% size.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Atum</span></td>
+                <td>Final blows grant 45% extra ultimate charge and resets cooldowns.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Shadow Edge</span></td>
+                <td>Hits apply 5 + 20% of damage as knockback towards you.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Cheap Trick</span></td>
+                <td>Standing still heals you for 12 + 13.33% of max health per second.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Paisley Park</span></td>
+                <td>Shows a pink icon on the closest player to you, and a blue icon on the furthest player from you.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Achtung</span></td>
+                <td>Become invisible for 1 second every 3 seconds.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Survivor</span></td>
+                <td>Heal 4.25% of max health per second for each player other than you within a 23m radius.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Metallica</span></td>
+                <td>You are invisible but leave behind trails and sparkles.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Liable Sprocket</span></td>
+                <td>Landing a melee will stun the victim for 1.2 seconds, and knock them back for 5 vertically + 7 backwards.</td>
+                <td>3 seconds</td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">Diver Down</span></td>
+                <td>Hits deal 0.5x the original damage every 0.1 seconds until it reaches below 0.05 damage.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">Cream</span></td>
+                <td>Hits within 5m deal 0.66x the original damage every 0.05 seconds until it reaches below 1 damage or you leave the range.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">Rolling Stones</span></td>
+                <td>Create an orb which tracks down the player you look at. The orb moves at (4 + 0.5 * killstreak)m per second and deals 25% of the victim's max health when coming into contact with them. Hits execute targets below 25% max health.</td>
+                <td>(orb attack) 2 seconds</td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">The Sun</span></td>
+                <td>Passively damage players for 53.33 damage per second in a 6m radius around you.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">The Hand</span></td>
+                <td>Hits that deal 50% of the victim's max health deal 2.2x damage, 1.2x otherwise.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">Osiris</span></td>
+                <td>Deal 1.4x damage for each kill in your killstreak.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">Hallowed</span></td>
+                <td>Final blows cause explosions dealing 75% of the victim's max health to players within 12 meters of the victim.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">Divine</span></td>
+                <td>Hits have a 25% chance to crit for 2.8x damage.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">Anointed</span></td>
+                <td>Hits that deal 33% of the victim's max health deal an extra 22% of their max health, 0.013% of their max health otherwise.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">Grateful Dead</span></td>
+                <td>Deal 2x damage if your current health is lower than your victim's.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">Kjaro's Band</span></td>
+                <td>Hits will creating a flaming tornado on the victim, pulsing three times, once every 0.5 seconds, dealing 11.11% max health to players within a 8m radius each time.</td>
+                <td>10 seconds</td>
+            </tr>
+            <tr>
+                <td><span style="color:#00E4FF">Mr. President</span></td>
+                <td>Take 20% reduced damage and dodge 20% of attacks.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#00E4FF">Killer Queen</span></td>
+                <td>Dropping below 25% max health will heal you to full and launch you in the air, teleporting you to where you spawned.</td>
+                <td>25 seconds</td>
+            </tr>
+            <tr>
+                <td><span style="color:#00E4FF">Vampire</span></td>
+                <td>Final blows grant 100 shields.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#B63FFF">Wonder of U</span></td>
+                <td>Taking damage creates 6 black flashes, once every 0.2 seconds which deals 4.16% of the attacker's max health.</td>
+                <td>7 seconds</td>
+            </tr>
+            <tr>
+                <td><span style="color:#B63FFF">Blood Dark</span></td>
+                <td>After dealing 500 damage, your next hit steals 66.66% of the victim's max health.</td>
+                <td></td>
+            </tr>
+            </table>
+            <h1 style="color:white; font-size: 25px">Active Fusions</h1>
+    <table id="tableStyle">
+        <tr>
+            <th>Name</th>
+            <th>Ability</th>
+            <th>Cooldown</th>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">Black Sabbath</span></td>
+            <td>Teleport behind the closest player to your crosshair.</td>
+            <td>5 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">Chariot Requiem</span></td>
+            <td>Put players within 6m to sleep for 3.5 seconds.</td>
+            <td>10 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">Made in Heaven</span></td>
+            <td>Slow down time by 70%, gaining 200 speed for 3 seconds.</td>
+            <td>25 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">Echoes</span></td>
+            <td>Reverse the facing direction of the closest player to your crosshair.</td>
+            <td>8 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">Hermit Purple</span></td>
+            <td>Pull the closest player to your crosshair towards you for 50 knockback, then constantly pull them for 3 seconds.</td>
+            <td>11 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">White Wedding</span></td>
+            <td>Create an ionic bond on a wall, pulling in players in LoS within 15m for 2 seconds before exploding for 20% of their max health and 20 knockback away.</td>
+            <td>12 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">Chocolate Disco</span></td>
+            <td>Teleport players within 8m of you to the furthest player from you./td>
+            <td>13 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">The World</span></td>
+            <td>Freeze yourself for 1.5 seconds, then freeze players in LoS within 25m for 3 seconds.</td>
+            <td>20 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">Catch The Rainbow</span></td>
+            <td>Apply 10 knockback downward to yourself. Your gravity is reduced by 40%, and jumping applies a 12 + current speed knockback to you in your facing direction.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">Yellow Temperance</span></td>
+            <td>Copy the fusion, enchant, trait, and hero of the player closest to your crosshair.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">Smashing Pumpkin</span></td>
+            <td>Use 7% of your max health to teleport to the nearest ground 7m in the direction you are facing.</td>
+            <td>1.5 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">Moody Blues</span></td>
+            <td>Target the closest player to your crosshair. If they use their ultimate within 4 seconds, fully charge your ultimate and stun them for 5 seconds.</td>
+            <td>10 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">Blue Hawaii</span></td>
+            <td>Force the next player to hit you to walk straight for 1.5 seconds.</td>
+            <td>13 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">Mandom</span></td>
+            <td>Set a health and position checkpoint granting 40 speed for 8 seconds. Return when time's up or by pressing interact.</td>
+            <td>12 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#80FE58">Jetstriker</span></td>
+            <td>Gain 300 speed, invincibility, and invisibility for 0.2 seconds.</td>
+            <td>2 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#FF4C4C">Kiss</span></td>
+            <td>Deal 2.35x damage for 5 seconds.</td>
+            <td>15 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#FF4C4C">Ball Breaker</span></td>
+            <td>Fire a ball which explodes on contact with terrain, damaging players in a 6m radius for 25% of their max health.. 50% Of all damage will chain to players within 12m.</td>
+            <td>15 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#FF4C4C">Soul Jar</span></td>
+            <td>Final blows grant 2 souls, and assists grant 1 soul. With 2 or more souls, interact will release the souls into an aimable beam which deals (1.15 - souls^-0.134)% of the victim's max health every 0.1 seconds for 0.3 seconds.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span style="color:#00E4FF">GER</span></td>
+            <td>Stun yourself and reflect damage for 3 seconds.</td>
+            <td>12 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#00E4FF">D4C</span></td>
+            <td>Enter a dimension where you gain 100 speed and can't be seen, attacked, or use abilities for 5 seconds. Interact exits early.</td>
+            <td>12 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#00E4FF">D4C:LT</span></td>
+            <td>Reflect damage randomly for 3 seconds.</td>
+            <td>15 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#00E4FF">Sacred Field</span></td>
+            <td>Create a 5m field of 70% damage reduction around you for 5 seconds.</td>
+            <td>12 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#B63FFF">King Crimson</span></td>
+            <td>Go invisible, gain 50 speed, and create a clone that attacks the closest player for 2.5 seconds.</td>
+            <td>12 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#B63FFF">C-Moon</span></td>
+            <td>Apply 70 knockback downward to the closest player to your crosshair, dealing 25% of their max health.</td>
+            <td>11 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#B63FFF">Hydrangea</span></td>
+            <td>Create a link between you and the closest player to your crosshair for 6 seconds, stealing any healing they receive, and damaging them for 50% of it.</td>
+            <td>14 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#B63FFF">Pylon</span></td>
+            <td>Create three pulses of electricity in a 5m radius around you, once per 0.25 seconds, damaging players for 9% max health and stunning for 0.1 seconds each.</td>
+            <td>7 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#B63FFF">Mortality</span></td>
+            <td>If above 90% health, create a mark which you return to and fully heal after dropping below 60% health.</td>
+            <td>17 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#B63FFF">Reaper</span></td>
+            <td>Create an 8m orb around you which lifesteals 5% max health from players within the orb every 0.25 seconds for 2.5 seconds.</td>
+            <td>16 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#B63FFF">Dawnwalker</span></td>
+            <td>Teleport to the closest player within 12m, dealing 12.5% of their max health and applying 6 knockback away from you. After 0.3 seconds, create a 3m light explosion in a random 8m area around you, dealing 10% max health every 0.05 seconds for 2.5 seconds.</td>
+            <td>13 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#B63FFF">Soft And Wet</span></td>
+            <td>Trap the closest player within 5m in a bubble which locks their movement and randomly floats them around, then pops after 3 seconds, dealing 10% of their max health.</td>
+            <td>11 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#B63FFF">Arcwarder</span></td>
+            <td>Equip a suit which grants a double jump and up to 2 beam attacks for 10 seconds. The beams explode in a 5m radius, dealing 4% max health instantly, and 16.66% max health over 5 seconds. Creates the same explosion when the suit ends.</td>
+            <td>12 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#B63FFF">Contractor</span></td>
+            <td>Stun yourself for 0.6 seconds. If you are hit, lift the attacker into the air and stun them for 2.5 seconds, then damage them for 18.18% max health.</td>
+            <td>14 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#B63FFF">Royal Capacitor</span></td>
+            <td>Create a lightning cloud above the player closest to your crosshair which strikes down in a 3m radius after 0.3 seconds, dealing 35% of their max health and stunning for 0.5 seconds.</td>
+            <td>11 seconds</td>
+        </tr>
+        <tr>
+            <td><span style="color:#B63FFF">Ride The Lightning</span></td>
+            <td>Surround yourself in a 2.5m ball of electricity and charge forwards while stunned. The ball applies 12 knockback in your facing direction, deals 1.25% max health, and stuns for 0.3 seconds every 0.05 seconds for 1.5 seconds.</td>
+            <td>12 seconds</td>
+        </tr>
+        </table>
+        <h1 style="color:white; font-size: 25px">Enchants</h1>
+        <table id="tableStyle">
+            <tr>
+                <th>Name</th>
+                <th>Ability</th>
+                <th>Cooldown</th>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Sorrow</span></td>
+                <td>Recieve 5 healing per second passively.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Heroism</span></td>
+                <td>Increases wall jump vertical knockback by 5.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Vampiric</span></td>
+                <td>Lifesteal 16.6% of damage on hit.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Displacement</span></td>
+                <td>Being below 40% max health will grant invisibility for 3 seconds.</td>
+                <td>7 seconds</td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Proficient</span></td>
+                <td>Your abilities have a 20% chance every second to reset.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Mending</span></td>
+                <td>14.28% Of healing recieved is converted to ultimate charge percent.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Absorption</span></td>
+                <td>Heal 40% of damage taken over 6 seconds..</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Conduction</span></td>
+                <td>10% Of damage taken is converted to ultimate charge percent..</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Attentive</span></td>
+                <td>Looking at a player displays their fusion, enchant, and health above them.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Ethereal</span></td>
+                <td>Your name and outline is hidden.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Adept</span></td>
+                <td>Your ultimate can't drop below 40%. Upon obtaining this enchant, your ultimate is charged to full.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Generous</span></td>
+                <td>Final blows heal the furthest player from you to full, and grants you 1% ultimate charge and 5 healing for each percent healed.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Executive</span></td>
+                <td>Shop purchases are free if you have the required points.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Lightweight</span></td>
+                <td>Holding jump lets you hover in the air while below y 25.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Withering</span></td>
+                <td>Take 2.5 damage per second, but gain 45% lifesteal.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Unstable</span></td>
+                <td>Eliminations switch your fusion.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Zealous</span></td>
+                <td>Eliminations grant 200% jump boost for 10 seconds.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Explosive</span></td>
+                <td>Wall jumps make you explode, dealing 12.5% of your max health, but increases wall jump knockback by 9.5 vertically, and 67 backwards.</td>
+                <td>(orb attack) 2 seconds</td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Evasive</span></td>
+                <td>Walk 50% faster when holding backwards.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Airborne</span></td>
+                <td>Crouching midair gives you up to two dashes which is 15 knockback in held direction and 4 knockback vertically. Resets on wall jump</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Focused</span></td>
+                <td>Standing still for 0.75 seconds lets you see the health and location of all players through walls.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Chilling</span></td>
+                <td>Hits slow players by 35% for 1 second.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Tension</span></td>
+                <td>Gain 1% ultimate charge per player other than you in a 23m radius every 0.3 seconds.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Lucky</span></td>
+                <td>Final Blows grant 15 extra luck.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#80FE58">Zephyr</span></td>
+                <td>Damaging an enemy grants 40 speed for 3 seconds.</td>
+                <td>4 seconds</td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">Perfection</span></td>
+                <td>Deal 1.25x damage while at full health.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">Bloodthirsty</span></td>
+                <td>Deal ((100 - normalized health * 100) / 300)x more damage.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">Respite</span></td>
+                <td>Deal 1.18x damage while standing still.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">Precision</span></td>
+                <td>Deal 1.25x damage to players with their ultimate ready.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">Necromancer</span></td>
+                <td>Summon a bot that moves towards and attacks whoever you look at.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#FF4C4C">Wind-Up</span></td>
+                <td>Every 5 seconds, gain 1 charge. Consume all charges next time you hit a player, creating an explosion that deals 22.22% max health per charge, and knocks back for 5 up and 10 per charge away. Max 3 charges.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#00E4FF">Providence</span></td>
+                <td>Being below half health grants invincibility for 1.5 seconds.</td>
+                <td>10 seconds</td>
+            </tr>
+            <tr>
+                <td><span style="color:#00E4FF">Cauterize</span></td>
+                <td>You are unkillable for 1 second you reach 1 health.</td>
+                <td>14 seconds</td>
+            </tr>
+            <tr>
+                <td><span style="color:#00E4FF">Shameless</span></td>
+                <td>Taking damage from a different player than the last phases you out for damage / 60 seconds.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#00E4FF">Unbeakable</span></td>
+                <td>Stuns last 0.35 seconds and being knocked back grants a 50% damage reduction shield that lasts 2.5 seconds.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#00E4FF">Reinforced</span></td>
+                <td>Every second, gain damage reduction equal to the percent of your max health you took last second.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#00E4FF">Unaware</span></td>
+                <td>Take 30% reduced damage from players you aren't looking at.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#B63FFF">Executioner</span></td>
+                <td>Final blows cause players within 14m of the victim to take 20% max health and are stunned for 2 seconds.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#B63FFF">Draconic</span></td>
+                <td>Gain 25 health per second for 5 seconds when reaching 40% hp, along with creating a small explosion which stuns and deals 20% max health.</td>
+                <td>12 seconds</td>
+            </tr>
+            <tr>
+                <td><span style="color:#B63FFF">Duelist</span></td>
+                <td>Take 15% less damage from and deal 1.2x damage to the last player that damaged you.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#B63FFF">Crippling</span></td>
+                <td>Every 2 seconds, your next attack deals extra 10% max health extra and cancels actions.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#B63FFF">Prismatic</span></td>
+                <td>After dealing 250 damage, gain either 1.33x damage boost for 5 seconds, 33.33% damage reduction for 5 seconds, cooldown reset, 50-100% heal, or 40-50% ultimate charge.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#B63FFF">Serrated</span></td>
+                <td>Reflect (damage * (damage / max health) * 0.35) damage back at your attacker.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#B63FFF">Cameo</span></td>
+                <td>You take 60% extra damage, but you have 2 lives. Losing a life grants 2 seconds of invincibility. Each final blow grants a life. Max 4.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#B63FFF">BFMV</span></td>
+                <td>Every 10 seconds, dodge the next hit and teleport to the nearest walkable position 6m in a random direction from the attacker.</td>
+                <td>10 seconds</td>
+            </tr>
+            <tr>
+                <td><span style="color:#B63FFF">Parano</span></td>
+                <td>Create a random 7m radius on the map that grants 30 healing per second, 20% damage reduction, and 1.2x damage for standing in it.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#B63FFF">Storm</span></td>
+                <td>Hits have a (damage / 1.65)% chance to strike lightning, stunning for (damage / 165) seconds and dealing 20% of the victim's max health.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span style="color:#B63FFF">Assault</span></td>
+                <td>After holding crouch for 1 second, let go to apply 4 knockback up and 20 in your facing direction. Touching a player within 1.8 seconds cancels your momentum, deals 20% of their max health, and stuns for 1 second.</td>
+                <td>4 seconds</td>
+            </tr>
+            </table>
+            <h1 style="color:white; font-size: 25px">Market</h1>
+            <p style = "color: white; font-size: 20px"><b>At the edge of the map, there is an orb that will randomly have fusions and enchants for sale.<br>
+                Buying a fusion or enchant will replace your current one for the cost of a few points.<br>
+                Holding Crouch + Reload anywhere for 1.5 seconds will buy the current item.<br>
+                Holding Crouch on top of the market will toggle whether or not it's on your hud.<br>
+                The market refreshes every 10 seconds.</b></p>
+                <table id="tableStyle">
+                    <tr>
+                        <th>Item</th>
+                        <th>Cost</th>
+                    </tr>
+                    <tr>
+                        <td>Fusion</td>
+                        <td><span style="color: #3FBF74">250</span> Points</td>
+                    </tr>
+                    <tr>
+                        <td>Enchants</td>
+                        <td><span style="color: #3FBF74">150</span> Points</td>
+                    </tr>
+                    </table>
+    </div>
+    </div>
+    </div>
+  </div>
+  </body>
+
+
+
+</html>
