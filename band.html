@@ -4,7 +4,7 @@
   <style>
     body {
       background-image: url('https://cdn.discordapp.com/attachments/636320755033964548/1049400295827976192/image.png');
-      height: 1150px;
+      height: 1500px;
       overflow: hidden;
     }
 
@@ -44,33 +44,11 @@ footer {
   width: 100%;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #e6e1e1;
-  max-width: 150px;
-  padding: 0px 15px;
-  z-index: 0;
-  font-size: 15px;
-  animation: fadeIn 0.25s;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropbtn {
-  background-color: #f1c20e;
-  color: white;
-  padding: 20px 51px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
 .topnav {
   overflow: hidden;
   background-color: #333;
+  margin:0;
+  padding:0;
 }
 
 .topnav a {
@@ -96,6 +74,43 @@ footer {
   font-size: 25px;
   padding: 1px;
 }
+    
+    .navbar {
+    list-style:none;
+    height:2em;
+    padding-left: 20px;
+    }
+
+    .navbar li {
+    display: inline-block;  
+    position:relative;
+    width:450px;
+    background-color:#f1c20e;
+    text-align:center;
+    }
+
+    .navbar li:hover {
+     background-color:#ebbc00;
+    }
+
+    .navbar a {
+    color:#000;
+    text-decoration:none;
+    line-height:2em;
+    }
+
+    .navbar ul {
+    position:absolute;
+    left:-999em;
+    }
+
+    .navbar li:hover ul {
+    left:0;
+    top:auto;
+    margin:0;
+    padding:0;
+    }
+  
 
   </style>
 
@@ -136,20 +151,32 @@ footer {
     </script>
     <img src="https://media.discordapp.net/attachments/636320755033964548/1072157854867406900/image.png" alt="Logo" width="384" height="338">
     </div>
-    <div class="dropdownffset" style="padding-left: 20px;">
-  <div class="dropdown">
-      <button class="dropbtn">Blockstring</button>
-      <div class="dropdown-content">
-        <p>1. R.I.S.C</p>
-        <p>2. Down With The System</p>
-        <p>3. Hold Back</p>
-        <p>4. The c.S 2S 2H Special</p>
-        <p>5. You don't have the guts</p>
-        <p>6. RTL</p>
-        <p>7. What the bandit brings</p>
-      </div>
-    </div>
-    </div>
+        <p style="color:white; font-size: 50px; padding-left: 20px; margin: 0;">Albums:</p>
+        <p style="color:white; font-size: 10px; padding-left: 20px; margin: 0;">Release date TBD</p>
+        <ul class="navbar">
+            <li><a href="#">Blockstring</a>
+                <ul>
+                    <li style= "background-color: #fece0e"><a href="#">1. R.I.S.C</a></li>
+                    <li style= "background-color: #fece0e"><a href="#">2. Down With The System</a></li>
+                    <li style= "background-color: #fece0e"><a href="#">3. Hold Back</a></li>
+                    <li style= "background-color: #fece0e"><a href="#">4. The c.S 2S 2H Special</a></li>
+                    <li style= "background-color: #fece0e"><a href="#">5. You don't have the guts</a></li>
+                    <li style= "background-color: #fece0e"><a href="#">6. RTL</a></li>
+                    <li style= "background-color: #fece0e"><a href="#">7. What the bandit brings</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Patch Notes</a>
+              <ul>
+                <li style= "background-color: #fece0e"><a href="#">1. Reduced guitar volume by 3db.</a></li>
+                <li style= "background-color: #fece0e"><a href="#">2. Reduced song hitbox by 11%.</a></li>
+                <li style= "background-color: #fece0e"><a href="#">3. Reduced d string volume by 20%. </a></li>
+                <li style= "background-color: #fece0e"><a href="#">4. Increased tempo by 3 BPM.</a></li>
+                <li style= "background-color: #fece0e"><a href="#">5. Added vuvuzela.</a></li>
+                <li style= "background-color: #fece0e"><a href="#">6. Fixed album cover rendering at a lower resolution then intended. </a></li>
+                <li style= "background-color: #fece0e"><a href="#">7. Removed Herobrine.</a></li>
+              </ul>
+            </li>
+          </ul>
   </div>
   <footer>
     <p>Buisness concerns? Too bad.</p>
