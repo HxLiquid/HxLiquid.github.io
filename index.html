@@ -105,10 +105,16 @@ span {
       }
       document.write('<p style="color:white; text-shadow: 0 0 2px var(--color);">It is August ' + august().fontcolor(color) + '<br>It has been <strong>' + days + '</strong> days since August 15th, 2022' + '<br>It has been <strong>' + years + '</strong> years since August 15th, 2022</p>')
     </script>
+    <p style="color:white;">On a side note,</p>
+    <script>
+      var currentDate = new Date().getTime();
+      var targetDate = new Date("April 15, 2024").getTime();
+      var diff = targetDate - currentDate;
+      var days = Math.floor(diff / (1000 * 60 * 60 * 24)) + 1;
+      var r = document.querySelector(':root');
+      document.write('<p style="color:white; text-shadow: 0 0 2px #000000;">It is <strong>' + days + ' </strong>days until <strong>April 15th, 2024</p>')
+    </script>
     </div>
 </div>  
   </body>
-
-
-
 </html>
