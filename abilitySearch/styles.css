@@ -1,0 +1,128 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background-image: url('https://workshop.codes/assets/brand/pattern-1d6879b9cb809bf728cbeec22b6479cd19a2536acda1f7a90029cfce8acc5338.jpg');
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+p {
+  color: rgb(240, 240, 240);
+}
+
+.search-container {
+  background-color: rgb(39, 43, 46);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 8px;
+  border: 3px solid #000000;
+}
+
+#searchTitle {
+  margin: 0;
+  font-size: 40px;
+  color: #fdfdfd;
+  width: 300px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(39, 43, 46);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 3px solid #000000;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 30px;
+}
+
+.card {
+  flex: 0 0 calc(33.333% - 20px);
+  border: 3px solid #000000;
+  border-radius: 8px;
+  background-color: rgb(46, 51, 55);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 200px;
+  height: 250px;
+  opacity: 0; 
+}
+
+.card:hover {
+  border: 3px solid #ffffff;
+}
+
+.card p {
+  margin: 5px 0;
+  color: rgb(240, 240, 240);
+}
+
+.card .ability-line {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card .description-line {
+  font-size: 18px;
+}
+
+.card .type-line {
+  font-size: 15px;
+}
+
+.card .role-line {
+  font-size: 15px;
+}
+
+.card .cooldown-line {
+  font-size: 15px;
+}
+
+hr {
+  border-color: rgb(240, 240, 240);
+}
+
+#switchButton {
+  background-color: rgb(46, 51, 55);
+  color: rgb(240, 240, 240);
+  padding: 10px 15px;
+  border: 3px solid rgb(255, 128, 0);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: -150px;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+#switchButton:hover {
+  background-color: rgb(255, 128, 0);
+}
+
+#searchInput {
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
