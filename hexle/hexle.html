@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hexle</title>
+</head>
+<body>
+    <h1 id="color">Hexle</h1>
+    <h2 id="color2">It's like wordle except it's not and you guess colors in RGB</h2>
+    <div id="game-container">
+        <div id="color-box"></div>
+        <div id="color-guess-box"></div>
+        <div id="guess-form">
+            <label id="red-label" for="red">Red:</label>
+            <input type="number" id="red" min="0" max="255" onkeypress="handleKeyPress(event, 'red')">
+            <label id="green-label" for="green">Green:</label>
+            <input type="number" id="green" min="0" max="255" onkeypress="handleKeyPress(event, 'green')">
+            <label id="blue-label" for="blue">Blue:</label>
+            <input type="number" id="blue" min="0" max="255" onkeypress="handleKeyPress(event, 'blue')">
+            <button id ="check-button" onclick="checkGuess()">Submit Guess</button>
+            <p id="result"></p>
+            <p id="accuracy"></p>
+        </div>
+        <p id="end-results"></p>
+    </div>
+    <img src="colorwheel.png" width="250" height="250" class="center">>
+    
+    <script src="script.js"></script>
+</body>
+</html>
