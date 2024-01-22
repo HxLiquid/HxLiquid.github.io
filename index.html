@@ -116,6 +116,14 @@ span {
       var r = document.querySelector(':root');
       document.write('<p style="color:white; text-shadow: 0 0 2px #000000;">It is <strong>' + days + ' </strong>days until <strong>April 15th, 2024</p>')
     </script>
+    <script>
+      var currentDate = new Date().getTime();
+      var targetDate = new Date("March 8, 2022").getTime();
+      var diff = targetDate - currentDate;
+      var days = Math.floor(diff / (1000 * 60 * 60 * 24)) + 1;
+      var r = document.querySelector(':root');
+      document.write('<p style="color:white; text-shadow: 0 0 2px #000000;">yeah it\'s been <strong>' + days + ' </strong>days since yeah chat started</p>')
+    </script>
     </div>
 </div>  
   </body>
